@@ -12,7 +12,7 @@
 > 취업분야 검색어: AI
 
 > 사용한 기능
-- Scraping : beautifulsoup4, Selenium
+- Scraping : Selenium
 - Web Server : Django, CSS, HTML
 - DB : mongoDB
 - Scheduler
