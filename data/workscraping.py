@@ -12,16 +12,16 @@ def insertDB(data):
 def Scrap():
         path = '/Users/Bigmac/Documents/Develop/ownproject/data/chromedriverl'
         with webdriver.Chrome(executable_path=path) as driver:
-                url = "https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?keyword=ai"
-                # url = "https://www.work.go.kr"
+                # url = "https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?keyword=ai"
+                url = "https://www.work.go.kr"
                 driver.get(url=url)
 
                 time.sleep(5)
 
-                # search_form = driver.find_element_by_name("topQuery")
-                # search_box = search_form.find_elements_by_css_selector("#topQuery")
-                # search_form.send_keys("AI")
-                # search_bnt = driver.find_element_by_css_selector("#searchFrm > div.header-search > a").click()
+                search_form = driver.find_element_by_name("topQuery")
+                search_box = search_form.find_elements_by_css_selector("#topQuery")
+                search_form.send_keys("AI")
+                search_bnt = driver.find_element_by_css_selector("#searchFrm > div.header-search > a").click()
                 
                 for i in range(0, 11):
                         data = {}
@@ -39,12 +39,13 @@ def Scrap():
                                 pass
                         
                         print(data)
-                        # insertDB(data)
+                        insertDB(data)
                         driver.quit()
                 
                 
-Scrap()            
-# schedule.every(10).minutes.do(Scrap)
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+Scrap()        
+    
+schedule.every(10).minutes.do(Scrap)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
