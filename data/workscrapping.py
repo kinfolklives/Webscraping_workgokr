@@ -13,7 +13,7 @@ def insertDB(data):
                 myworkdb.test.insert_one(data)
 
 def Scrap():
-        driver = webdriver.Chrome(executable_path='./chromedriver')
+        driver = webdriver.Chrome(executable_path='/workspace/ownproject02/data/chromedriver')
         url = "https://www.work.go.kr"
         driver.get(url=url)
 
@@ -42,9 +42,9 @@ def Scrap():
                 print(data)
                 insertDB(data)
                 
-schedule.every(10).seconds.do(Scrap)
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+# schedule.every(12).hours.do(Scrap)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)
 
 driver.quit()
