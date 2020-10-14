@@ -41,10 +41,9 @@ def Scrap():
                 
                 print(data)
                 insertDB(data)
+                driver.quit()
                 
 # schedule.every(12).hours.do(Scrap)
 # while True:
 #     schedule.run_pending()
 #     time.sleep(1)
-
-driver.quit()
