@@ -13,7 +13,7 @@ def insertDB(data):
                 myworkdb.test.insert_one(data)
 
 def Scrap():
-        driver = webdriver.Chrome(executable_path='/home/rapa01/Documents/Develop/ownproject/data/chromedriver')
+        driver = webdriver.Chrome(executable_path='/home/rapa01/Documents/Develop/chromedriver')
         url = "https://www.work.go.kr"
         driver.get(url=url)
 
