@@ -5,13 +5,13 @@
 
 ### 취업사이트 정보모음 
 
-워크넷 (www.work.go.kr)
+> 워크넷 (www.work.go.kr)
 
 <img src ="https://github.com/kinfolklives/ownproject/blob/master/images/%EC%BA%A1%EC%B3%903.png" width="500">
 
-취업분야 검색어: AI
+> 취업분야 검색어: AI
 
-사용한 기능
+> 사용한 기능
 - Scraping : beautifulsoup4, Selenium
 - Web Server : Django, CSS, HTML
 - DB : mongoDB
