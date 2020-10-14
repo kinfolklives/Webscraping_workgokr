@@ -1,5 +1,5 @@
 
-## 첫번째 개인 프로젝트 
+## 첫번째 개인 작업
 
 <img src ="https://github.com/kinfolklives/ownproject/blob/master/images/%EC%BA%A1%EC%B3%902.png" width="500">
 
@@ -10,10 +10,9 @@
 
 취업분야 검색어: AI
 
-Selenium 이용
+- Selenium 이용
 
 <img src ="https://github.com/kinfolklives/ownproject/blob/master/images/%EC%BA%A1%EC%B3%901.png" width="500">
 
-
-
+- goorm.io 이용한 호스팅 준비중
 
