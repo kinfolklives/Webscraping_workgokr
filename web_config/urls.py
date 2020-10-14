@@ -23,5 +23,6 @@ urlpatterns = [
     path('', workview.home, name='home'),
     path("hello", workview.hello, name="hello_home"),
     path("board/listwithmongo/", boardview.listwithmongo), # add
-    path("workdb", workview.workDB), # add 
+    path("workdb", workview.workDB), # add
+    path("home", workview.home),
 ]

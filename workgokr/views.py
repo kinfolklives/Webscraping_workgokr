@@ -16,3 +16,6 @@ def workDB(request):
         result = list(myworkdb.test.find({})) # get Collection with find()
         data['page_obj'] = result
     return render(request, 'board/workdb.html', context=data)
+
+def home(request):
+    return render(request, 'home.html')
