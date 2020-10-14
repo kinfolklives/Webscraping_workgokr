@@ -10,7 +10,7 @@ def insertDB(data):
                 myworkdb.test.insert_one(data)
 
 def Scrap():
-        path = '/Users/Bigmac/Documents/Develop/ownproject/data/chromedriverm'
+        path = '/Users/Bigmac/Documents/Develop/ownproject/data/chromedriverl'
         with webdriver.Chrome(executable_path=path) as driver:
                 url = "https://www.work.go.kr/empInfo/empInfoSrch/list/dtlEmpSrchList.do?keyword=ai"
                 # url = "https://www.work.go.kr"
