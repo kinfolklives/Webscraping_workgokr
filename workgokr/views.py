@@ -1,0 +1,18 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from pymongo import MongoClient
+
+# Create your views here.
+def home(request):
+    return HttpResponse("Welcome to Django Home!")
+
+def hello(requuest):
+    return HttpResponse("Hello, Django!")
+
+def workDB(request):
+    data = request.GET.copy()
+    with MongoClient("mongodb://127.0.0.1:27017/") as client:
+        myworkdb=client.mytest
+        result = list(myworkdb.test.find({})) # get Collection with find()
+        data['page_obj'] = result
+    return render(request, 'board/workdb.html', context=data)

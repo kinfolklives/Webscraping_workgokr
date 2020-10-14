@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class = "table table-striped">
+        <tr>
+            <th>name</th> <th>title</th> <th>desc</th><th>career</th><th>academic</th>
+            <th>location</th><th>d_day1</th><th>d_day2</th>
+        </tr>
+        {% for row in page_obj.0 %}
+        <tr> <td> {{row.name}}</td> <td>{{row.title}}</td><td>{{row.desc}}</td><td>{{row.career}}</td><td>{{row.academic}}</td>
+            <th>{{row.location}}</th><th>{{row.d_day1}}</th><th>{{row.d_day2}}</th>
+        </tr>
+        {% endfor %}        
+    </table>
+</body>
+</html>
