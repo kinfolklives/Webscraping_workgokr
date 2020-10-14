@@ -3,10 +3,8 @@ from django.http import HttpResponse
 from pymongo import MongoClient
 
 # Create your views here.
-def home(request):
-    return HttpResponse("Welcome to Django Home!")
 
-def hello(requuest):
+def hello(request):
     return HttpResponse("Hello, Django!")
 
 def workDB(request):
