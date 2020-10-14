@@ -11,7 +11,11 @@
 
 취업분야 검색어: AI
 
-- Selenium 이용
+사용한 기능
+- Scraping : beautifulsoup4, Selenium
+- Web Server : Django, CSS, HTML
+- DB : mongoDB
+- Scheduler
 
 <img src ="https://github.com/kinfolklives/ownproject/blob/master/images/%EC%BA%A1%EC%B3%901.png" width="1000">
 
