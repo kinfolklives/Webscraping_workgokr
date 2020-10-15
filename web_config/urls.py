@@ -21,8 +21,9 @@ from board import views as boardview
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', workview.home, name='home'),
-    path("hello", workview.hello, name="hello_home"),
-    path("board/listwithmongo/", boardview.listwithmongo), # add
-    path("workdb", workview.workDB), # add
     path("home", workview.home),
+    path("hello", workview.hello, name="hello_home"),
+    path("workdb", workview.workDB), # add
+    path("board/listwithmongo/", boardview.listwithmongo), # add
+    path("board/listwithmongowithpaginator/", boardview.listwithmongowithpaginator, name="listwithmongowithpaginator"),
 ]
