@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from workgokr import views as workview
 from board import views as boardview
+from maps import views as mapview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,7 @@ urlpatterns = [
     path("hello", workview.hello, name="hello_home"),
     path("workdb", workview.workDB), # add
     path("board/listwithmongo/", boardview.listwithmongo), # add
-    path("board/listwithmongowithpaginator/", boardview.listwithmongowithpaginator, name="listwithmongowithpaginator"),
+    path("board/listwithmongowithpaginator/", boardview.listwithmongowithpaginator, 
+         name="listwithmongowithpaginator"),
+    path("map", mapview.showmapwithfolium),
 ]
