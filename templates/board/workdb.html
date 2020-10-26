@@ -6,17 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <table class = "table table-striped">
+    <P class ="w3-center"><h2>사람인 구인 (검색어: AI)</h2></P>
+    <table class = "table table-striped w3-center">
+        
         <tr>
-            <th>회사명</th> <th>모집내용</th> <th>업무</th><th>경력</th><th>학력</th>
-            <th>위치</th><th>마감일</th><th>등록/마감</th>
+            <th>insert_name</th> <th>company_name</th> <th>title</th><th>location</th><th>career</th><th>job_url</th>
         </tr>
         {% for row in page_obj.0 %}
-        <tr> <td> {{row.name}}</td> <td>{{row.title}}</td><td>{{row.desc}}</td><td>{{row.career}}</td><td>{{row.academic}}</td>
-            <th>{{row.location}}</th><th>{{row.d_day1}}</th><th>{{row.d_day2}}</th>
+        <tr> <td> {{row.insert_name}}</td> <td>{{row.company_name}}</td><td>{{row.title}}</td><td>{{row.location}}</td><td>{{row.career}}</td>
+            <td>{{row.job_url}}</td></th>
         </tr>
         {% endfor %}        
     </table>

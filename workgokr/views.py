@@ -10,8 +10,8 @@ def hello(request):
 def workDB(request):
     data = request.GET.copy()
     with MongoClient("mongodb://127.0.0.1:27017/") as client:
-        myworkdb=client.mytest
-        result = list(myworkdb.test.find({})) # get Collection with find()
+        myworkdb=client.saraminDB
+        result = list(myworkdb.saraminCollection.find({})) # get Collection with find()
         data['page_obj'] = result
     return render(request, 'board/workdb.html', context=data)
 
